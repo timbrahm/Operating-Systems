@@ -1,0 +1,13 @@
+Brahm, Tim 94/100
+  cp:
+   - need to check for errors from read(), write() -2
+   - missing close() statements -3
+
+   - can just check for argc != 3
+   - set destination permissions directly (is easier):
+      open(argv[2], O_CREAT|O_WRONLY, ret.st_mode);
+
+  ls:
+   - need to break line for directories with a lot of files (short mode) -1
+
+++

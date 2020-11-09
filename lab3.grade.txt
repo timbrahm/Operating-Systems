@@ -1,0 +1,11 @@
+Brahm, Tim 99/100
+  client:
+    - need to free() anything you malloc() -1
+      (can just use optarg and not copy, it's not going anywhere)
+
+  server:
+    - only need to call nonblock on fds that you will _read_ from
+
+  overall, excellent submission
+
+++

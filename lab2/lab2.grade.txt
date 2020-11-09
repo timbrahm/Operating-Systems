@@ -1,0 +1,14 @@
+Brahm, Tim 94/100
+  client:
+    - getopt() should be it's own block of code. not enclosing your
+      entire program. -3
+      what if -p wasn't passed to client? this is legal.
+    - sockaddr_in s_addr cannot bet set to INADDR_ANY (this is for server-side) -2
+      use gethostbyname():  memcpy(&sa.sin_addr.s_addr, host->h_addr, host->h_length);
+    - need to close sfd at program exit -1
+
+  server:
+    - getopt() should be it's own block of code. not enclosing your
+      entire program.
+
+++
